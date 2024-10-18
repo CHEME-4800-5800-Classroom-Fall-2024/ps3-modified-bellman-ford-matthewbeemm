@@ -90,3 +90,7 @@ function build(model::Type{T}, edgemodels::Dict{Int64, MyGraphEdgeModel}) where 
     return graphmodel;
 end
 # --- PUBLIC METHODS ABOVE HERE ----------------------------------------------------------------------------------- #
+
+
+
+
