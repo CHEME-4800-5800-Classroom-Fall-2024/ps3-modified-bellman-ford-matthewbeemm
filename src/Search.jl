@@ -134,10 +134,14 @@ function _search(graph::T, start::MyGraphNodeModel, algorithm::ModifiedBellmanFo
     number_of_nodes = length(nodes);
     
     # TODO: implement this function
-    throw("ModifiedBellmanFordAlgorithm not implemented");
+    # throw("ModifiedBellmanFordAlgorithm not implemented");
+
+    # If we don't want the extra credit: just call the original Bellman-Ford algorithm
+    return _search(graph, start, BellmanFordAlgorithm());
+
 
     # return -
-    return distances, previous;
+    # return distances, previous;
 end
 
 
@@ -161,7 +165,3 @@ function computeshortestpaths(graph::T, start::MyGraphNodeModel,
     return _search(graph, start, algorithm);
 end
 # ------ PUBLIC ABOVE BELOW HERE ---------------------------------------------------------------------------------- #
-
-
-
-
